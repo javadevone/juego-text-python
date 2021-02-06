@@ -1,0 +1,55 @@
+#INICIO|Eres un aventurero novato y estás a punto de entrar en una oscura y profunda cueva llena de Goblins malignos.|100
+*ENTRADA|Entrar y comenzar la aventura
+
+#ENTRADA|Esta muy oscuro y no se ve nada. Te preguntas si existe alguna manera de hacer las cosas más fáciles...
+*CAIDA|Seguir avanzando a tientas en la oscuridad
+*MOCHILA|Buscar en tu mochila algo que pueda ser de utilidad
+
+#CAIDA|Sin darte cuenta no notas el suelo debajo de tus pies y empiezas a caer. Al fondo del foso hay muchas piedras afiladas...|-1000
+
+#MOCHILA|En la oscuridad empiezas a palpar dentro de tu mochila. Por suerte trajiste los materiales necesarios para crear y encender una antorcha
+*LUZ|Encender la antorcha y continuar
+
+#LUZ|Al fin puedes ver algo en la oscuridad. La cueva tiene el techo bajo y es bastante húmeda. Tras avanzar un poco acabas llegando a una bifurcación
+*IZQUIERDA|Ir por la izquierda (se ve una leve luz)
+*DERECHA|Ir por la derecha (el camino está totalmente oscuro)
+
+#IZQUIERDA|Entras por el camino de la izquierda ya que ves una leve luz al fondo. Cuando llegas descubres que hay decenas de goblins sentados al lado de una hoguera. ¡Nada más verte te atacan todos!|-1000
+
+#DERECHA|Te adentras por el oscuro tunel de la derecha. El camino sube y al final acabas llegando a un agujero donde se ve algo de luz. Al asomarte descubres que hay muchos goblins sentados alrededor de una hoguera.
+*PASAR|Sería peligroso hacer nada, es mejor que lo dejes estar y continues por el tunel.
+*EXAMINAR|A lo mejor puedes acabar con los goblins si tienes algo de utilidad en la mochila.
+
+#EXAMINAR|Tras revisar tu mochila, descubres que tienes algunas cosas que podrían servirte para acabar con los Goblins:
+*BOMBA|Tienes aceite, una cantimplora y una cuerda, parece que puedes fabricar una bomba para lanzar a los goblins
+*PUÑAL|Tienes un puñal arrojadizo. Observas que encima de los goblins hay cajas pesadas colgadas con poleas. Podrías intentar cortar la cuerda lanzando el puñal para aplastar a los goblins
+
+#BOMBA|Preparas la bomba, la enciendes y la lanzas. Cuando explota, todos los goblins mueren con la explosión. Sin embargo, la fuerza de la onda expansiva hace que el techo se derrumbe y encuentras tu tumba bajo toneladas de roca...|-1000
+
+#PUÑAL|Apuntas atentamente y logras cortar la cuerda. Todos los goblins mueren aplastados. ¡Bien hecho!
+*REVISAR|Bajar a revisar si puedes encontrar algo útil en el campamento de los goblins
+*PASAR|Continuar por el camino que estabas siguiendo y dejar atrás el campamento de los goblins
+
+#REVISAR|Bajas hasta el campamento y registras a los goblins y las cajas cercanas. Encuentras una espada bastante afilada que parece que los golins han robado recientemente. Esto te ayudará a sobrevivir (Superviviencia +50)|50
+*PASAR|Continuar adentrándose en la cueva
+
+#PASAR|Sigues avanzando en la oscuridad. Antes de darte cuenta, ¡un pequeño goblin aparece por sorpresa!
+*PUÑETAZO|El goblin no parece muy grande, atácale con un puñetazo directo
+*PLACAJE|Intenta placar al goblin para derribarle y acabar con el en el suelo
+*PIEDRA|Ves una piedra bastante grande delante. Cógela y lanzala al goblin para hacerle bastante daño
+
+#PUÑETAZO|Le das un puñetazo directo al goblin en la cara pero inesperadamente, es más resistente de lo que parece. Logra morderte y hacerte daño (Supervivencia - 50)|-50
+*PLACAJE|Intenta placar al goblin para derribarle y acabar con el en el suelo
+*PIEDRA|Ves una piedra bastante grande delante. Cógela y lanzala al goblin para hacerle bastante daño
+
+#PLACAJE|Embistes al goblin ya que es más pequeño que tu. Logras derribarle al suelo pero el goblin es muy ágil. Mientas forcejeais, el goblin te araña con sus afiladas garras (Supervivencia -30)|-30
+*PIEDRA|Ves una piedra bastante grande delante. Cógela y lanzala al goblin para hacerle bastante daño
+
+#PIEDRA|Coges una piedra del suelo y se la lanzas al goblin directamente. Le alcanzas en la cabeza y acabas con el al instante. ¡Bien hecho!
+*CADAVER|Examinar el cadaver para ver si tiene algo útil
+
+#CADAVER|El goblin llevaba un pequeño zurrón con cosas que ha robado recientemente. Logras hacerte con una poción curativa y algunos trapos que se pueden usar a modo de vendajes (Supervivencia +20)|20
+*BOVEDA|Recoger todo y continuar hacia las profundidades
+
+#BOVEDA|Tras un rato, la cueva se ensancha y llegas a una zona mucho más grande. Probablemente fue una antigua mina. Desgraciadamente JD1 es muy vago para seguir escribiendo el juego así que ahora te toca a ti continuar!|-1000
+*INICIO|A comenzar de nuevo...
